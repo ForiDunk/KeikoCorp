@@ -6,9 +6,9 @@ $(document).ready(function(){
 		var section = $(this).attr('href');
 		var section_pos = $(section).position();
 
-		if(section_pos){
-			$(window).scrollTo({top:section_pos.top, left:'0px'}, 1000);
-		}
+		// if(section_pos){
+		// 	$(window).scrollTo({top:section_pos.top, left:'0px'}, 1000);
+		// }
 		
 	});
 
@@ -38,14 +38,14 @@ $(document).ready(function(){
 
 
 	//wow.js on scroll animations initialization
-	wow = new WOW(
-	    {
-		  animateClass: 'animated',
-		  mobile: false,
-		  offset: 50
-		}
-	);
-	wow.init();
+	// wow = new WOW(
+	//     {
+	// 	  animateClass: 'animated',
+	// 	  mobile: false,
+	// 	  offset: 50
+	// 	}
+	// );
+	// wow.init();
 
 
 
@@ -55,7 +55,7 @@ $(document).ready(function(){
 
 
 	//parallax effect initialization
-	$('.hero').parallax("50%", 0.3);
+	// $('.hero').parallax("50%", 0.3);
 
 
 
@@ -65,16 +65,16 @@ $(document).ready(function(){
 
 
 	//Nice scroll initialization
-	$("html").niceScroll({
-		scrollspeed: 50,
-		autohidemode : false,
-		cursorwidth : 8,
-		cursorborderradius: 8,
-		cursorborder : "0",
-		background : "rgba(48, 48, 48, .4)",
-		cursorcolor : '#1f1f1f',
-		zindex : 999
-	});
+	// $("html").niceScroll({
+	// 	scrollspeed: 50,
+	// 	autohidemode : false,
+	// 	cursorwidth : 8,
+	// 	cursorborderradius: 8,
+	// 	cursorborder : "0",
+	// 	background : "rgba(48, 48, 48, .4)",
+	// 	cursorcolor : '#1f1f1f',
+	// 	zindex : 999
+	// });
 
 
 
@@ -84,17 +84,17 @@ $(document).ready(function(){
 
 
 	//Testimonials slider initialization
-	$("#tslider").owlCarousel({
-		items : 1,
-		navigation : true,
-		pagination : false,
-		slideSpeed : 300,
-		paginationSpeed : 400,
-		singleItem: true,
-		responsive: true,
-		autoPlay : true,
-		transitionStyle : "fade"
-	});
+	// $("#tslider").owlCarousel({
+	// 	items : 1,
+	// 	navigation : true,
+	// 	pagination : false,
+	// 	slideSpeed : 300,
+	// 	paginationSpeed : 400,
+	// 	singleItem: true,
+	// 	responsive: true,
+	// 	autoPlay : true,
+	// 	transitionStyle : "fade"
+	// });
 
 
 
@@ -108,12 +108,12 @@ $(document).ready(function(){
    		processing('icon', 'loading');
 	});
 
-	if($('#submit_form').length){
-		//Mailchim Subscription form
-		$('#submit_form').ajaxChimp({
-		    callback: chimpResponce
-		});
-	}	
+	// if($('#submit_form').length){
+	// 	//Mailchim Subscription form
+	// 	$('#submit_form').ajaxChimp({
+	// 	    callback: chimpResponce
+	// 	});
+	// }	
 
 	//Mail chimp callback function
 	function chimpResponce(resp) {
